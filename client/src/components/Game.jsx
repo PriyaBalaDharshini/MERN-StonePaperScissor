@@ -74,7 +74,7 @@ const Game = () => {
         };
 
         try {
-            await axios.post('http://localhost:8000/save-game', gameData);
+            await axios.post('https://mern-stonepaperscissor.onrender.com/save-game', gameData);
             alert('Game data saved successfully!');
         } catch (error) {
             console.error('Error saving game data', error);

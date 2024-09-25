@@ -28,7 +28,6 @@ const Game = mongoose.model('Game', gameSchema);
 //to save-the-game
 app.post("/save-game", async (req, res) => {
     try {
-
         const { player1Name, player2Name, player1Score, player2Score, winner } = req.body;
         const newGame = new Game({
             player1Name,

@@ -7,7 +7,7 @@ const GameData = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:8000/all-games");
+                const response = await axios.get("https://mern-stonepaperscissor.onrender.com/all-games");
                 console.log(response.data);
                 setGameData(response.data);
             } catch (error) {
