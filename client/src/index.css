@@ -91,3 +91,44 @@
 .game img{
     border-radius: 20px;
 }
+
+.game-data>button{
+    padding: 10px 30px;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.data {
+    width: 800px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(169, 169, 169, 0.256);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 30px;
+        margin-top: 20px;
+}
+
+.details {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}

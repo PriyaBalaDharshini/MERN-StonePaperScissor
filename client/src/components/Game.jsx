@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Game = () => {
+    const navigate = useNavigate()
     return (
         <div className="container">
             <div className="player-input">
@@ -25,7 +27,7 @@ const Game = () => {
 
                     </div>
                     <div className="player">
-                        <h2  className='player-name'>Player 2 Name</h2>
+                        <h2 className='player-name'>Player 2 Name</h2>
                         <img
                             style={{ height: '50px', width: '50px' }}
                         />
@@ -35,6 +37,9 @@ const Game = () => {
                 <button >
                     Play
                 </button>
+            </div>
+            <div className="game-data">
+                <button onClick={() => navigate("/game-data")}>See History</button>
             </div>
         </div>
     )
