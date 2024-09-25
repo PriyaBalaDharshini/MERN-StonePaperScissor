@@ -12,6 +12,15 @@ const DB = process.env.DB_URL;
 app.use(express.json());
 app.use(cors());
 
+const gameSchema = new mongoose.Schema({
+    player1Name: String,
+    player2Name: String,
+    player1Score: Number,
+    player2Score: Number,
+    winner: String,
+});
+const Game = mongoose.model('Game', gameSchema);
+
 app.get("/", (req, res) => res.send("Welcome to Backend"));
 
 mongoose
